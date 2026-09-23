@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * No guia-diseno-kontaktu.md / reference screenshots were available in this
+ * environment (see README "Decisiones"). These tokens are a deliberately
+ * restrained, neutral CRM palette — no invented brand colors, no gradients,
+ * no glassmorphism — chosen so the screen reads as a working tool rather
+ * than a generic SaaS template.
+ */
+:root {
+  --background: #f7f8fa;
+  --surface: #ffffff;
+  --border: #e2e5ea;
+  --foreground: #1a1d24;
+  --muted: #6b7280;
+  --muted-soft: #9aa1ac;
+  --accent: #2f5fed;
+  --accent-soft: #eaefff;
+  --success: #17824f;
+  --success-soft: #e5f5ec;
+  --warning: #a15c00;
+  --warning-soft: #fdf1e0;
+  --danger: #b3261e;
+  --danger-soft: #fbe9e8;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
